@@ -1,5 +1,3 @@
-
-
 Setup:
 Python Virtual Environment:
 Install virtualenv if you haven't already:
@@ -23,9 +21,7 @@ Initialize a Git repository if you haven't already:
 -> git add .
 -> git commit -m "Initial commit"
 -> git push origin main
-
 Design Patterns Used: 
-
 Command Pattern: 
 The Command pattern is one of the patterns I used, and it is essential for processing user commands in a scalable and adaptable way. This approach can be seen in the development of the application's plugin system, which includes concrete implementations of the Command abstract base class like AddCommand and SubtractCommand.
 
