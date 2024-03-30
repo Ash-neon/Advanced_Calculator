@@ -1,7 +1,12 @@
+from app import App
+from app.Plugin.menu import MenuCommand
+from decimal import Decimal
+from app.Plugin.add import AddCommand
 from app.Plugin.subtract import SubtractCommand
 from app.Plugin.multiply import MultiplyCommand
 from app.Plugin.divide import DivideCommand
 from history.history_manager import HistoryManager
+
 
 def test_add_command(capfd):
     history_manager = HistoryManager()

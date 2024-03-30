@@ -16,6 +16,8 @@ class HistoryManager:
         self.history_df = self.load_history()  # Load history when instantiated
 
     def load_history(self, file_path=None):
+        import os  # Import os module here
+
         if file_path is None:
             file_path = self.file_path  # Use default if no path is provided
 
@@ -39,7 +41,6 @@ class HistoryManager:
             logging.info(f"History saved to '{self.file_path}'.")
         except Exception as e:
             logging.error(f"Error saving history: {e}")
-
 
     def clear_history(self):
         try:
@@ -79,4 +80,10 @@ class HistoryManager:
             logging.error(f"Error adding record: {e}")
 
     def get_history(self):
-        return self.history_df
+        try:
+            # Reload the history DataFrame to ensure it contains the latest data
+            self.history_df = self.load_history()
+            logging.info("Current History DataFrame:")
+            print(self.history_df)
+        except Exception as e:
+            logging.error(f"Error printing history: {e}")

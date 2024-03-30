@@ -1,6 +1,7 @@
 import logging
 from app.command import Command
 from history.history_manager import HistoryManager
+import os
 
 # Configure logging for this module
 logger = logging.getLogger(__name__)

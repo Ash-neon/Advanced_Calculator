@@ -1,1 +1,4 @@
 Operand1,Operand2,Operation,Result
+10,2,subtract,
+4,5,multiply,
+20,4,divide,
