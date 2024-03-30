@@ -36,6 +36,7 @@ class App:
         logging.info("Logging configured.")
 
     def load_environment_variables(self):
+        #Env Setup
         settings = {key: value for key, value in os.environ.items()}
         logging.info("Environment variables loaded.")
         return settings
