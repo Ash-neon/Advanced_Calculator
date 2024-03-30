@@ -76,3 +76,4 @@ EAFP: This method attempts to carry out a task directly while managing any excep
 
 ## Video Link
 
+[![Watch the video](https://img.youtube.com/vi/PO6r5KB38oI/maxresdefault.jpg)](https://www.youtube.com/watch?v=PO6r5KB38oI)
