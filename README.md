@@ -70,8 +70,8 @@ I included logs throughout the program to make debugging easier and to keep an e
 
 ## Exception Handling: LBYL and EAFP
 I have used both LBYL and EAFP methods of exception handling, depending on the situation.
-LBYL: This method involves checking conditions before to carrying out a potential error. The CommandHandler.execute_command function in app/command/__init__.py is where I have used this function. As it verifies that a command name is in the commands dictionary before attempting to execute it. 
-EAFP: This method attempts to carry out a task directly while managing any exceptions that may occur. It is used in the execute_command method of the CommandHandler where it handles the conversion of user input to decimal. In this case, I try the conversion and raise the InvalidOperation exception if the input is invalid rather than immediately verifying if the user input is a valid integer. When there is a high probability of success and a low probability of exceptions, this function is helpful.
+- **LBYL**: This method involves checking conditions before to carrying out a potential error. The CommandHandler.execute_command function in app/command/__init__.py is where I have used this function. As it verifies that a command name is in the commands dictionary before attempting to execute it. 
+ - **EAFP**: This method attempts to carry out a task directly while managing any exceptions that may occur. It is used in the execute_command method of the CommandHandler where it handles the conversion of user input to decimal. In this case, I try the conversion and raise the InvalidOperation exception if the input is invalid rather than immediately verifying if the user input is a valid integer. When there is a high probability of success and a low probability of exceptions, this function is helpful.
 
 
 ## Video Link
